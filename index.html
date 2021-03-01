@@ -1,13 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css">
     <title>Music Web with Genie</title>
     <link rel="stylesheet" href="src/css/style.css">
 </head>
+
 <body>
+    <section class="artist">
+        <div class="artist__button">
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="artist__thubnail">
+            <img src="" alt="/">
+        </div>
+        <div class="artist__info">
+            <span class="artist__info__name">아이유 (IU), </span>
+            <span class="artist__info__insta">@dlwlrma, 18.9 million</span>
+        </div>
+        <div class="artist__buttons">
+            <div class="artist__buttons__shuffle">
+                <i class="fas fa-random"></i>
+                <span>Shuffle</span>
+            </div>
+            <div class="artist__buttons__likes">
+                <i class="fas fa-heart"></i>
+                <span>43.5M</span>
+            </div>
+        </div>
+        <ul>
+            <li>
+                <div class="artist__song__cover">
+                    <img src="" alt="/">
+                </div>
+                <div class="artist__song_info">
+                    <div class="artist__song__info__main">
+                        <span>IU</span>
+                        <span>Celebrity</span>
+                    </div>
+                    <div class="artist__song__info__etc">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="artist__player">
+            <span>Celebrity</span>
+            <div class="artist__player__buttons">
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-pause"></i>
+                <i class="fas fa-step-forward"></i>
+            </div>
+        </div>
+    </section>
+    <section class="music">
+        <div class="music__button">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="music__albumCover">
+            <img src="" alt="/">
+        </div>
+        <div class="music__title">
+            Celebrity
+        </div>
+        <div class="music__info">
+            <span>00:00</span>
+            <span>03:34</span>
+            <input type="range">
+        </div>
+        <div class="music__plater__buttons">
+            <i class="fas fa-redo-alt artist__song-redo"></i>
+            <i class="fas fa-step-backward"></i>
+            <i class="fas fa-play artist__song-play"></i>
+            <i class="fas fa-step-forward"></i>
+            <i class="fas fa-random artist__song-random"></i>
+        </div>
+    </section>
+
+
+
     <script src="src/js/main.js"></script>
 </body>
+
 </html>
