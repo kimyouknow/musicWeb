@@ -1,0 +1,12 @@
+@media (min-width: 768px) {
+  body {
+    flex-direction: row;
+    height: 900px;
+  }
+  .artist {
+    margin-right: 35px;
+  }
+  .music {
+    margin-left: 35px;
+  }
+}

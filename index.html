@@ -12,16 +12,16 @@
 
 <body>
     <section class="artist">
-        <div class="artist__button">
+        <div class="artist__button nav-btn">
             <i class="fas fa-arrow-left"></i>
             <i class="fas fa-search"></i>
         </div>
         <div class="artist__thubnail">
-            <img src="" alt="/">
+            <img src="https://image.genie.co.kr/Y/IMAGE/IMG_ARTIST/067/872/918/67872918_1588900211036_19_600x600.JPG/dims/resize/Q_80,0" alt="/">
         </div>
         <div class="artist__info">
-            <span class="artist__info__name">아이유 (IU), </span>
-            <span class="artist__info__insta">@dlwlrma, 18.9 million</span>
+            <span class="artist__info__name">아이유 (IU) </span>
+            <span class="artist__info__insta">@dlwlrma 18.9 million</span>
         </div>
         <div class="artist__buttons">
             <div class="artist__buttons__shuffle">
@@ -34,14 +34,56 @@
             </div>
         </div>
         <ul>
-            <li>
+            <li class="artist__song">
                 <div class="artist__song__cover">
-                    <img src="" alt="/">
+                    <img src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/867/444/81867444_1611726218872_1_600x600.JPG/dims/resize/Q_80,0" alt="/">
                 </div>
                 <div class="artist__song_info">
                     <div class="artist__song__info__main">
                         <span>IU</span>
                         <span>Celebrity</span>
+                    </div>
+                    <div class="artist__song__info__etc">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+            </li>
+            <li class="artist__song">
+                <div class="artist__song__cover">
+                    <img src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/434/107/81434107_1588747979387_1_600x600.JPG/dims/resize/Q_80,0" alt="/">
+                </div>
+                <div class="artist__song_info">
+                    <div class="artist__song__info__main">
+                        <span>IU</span>
+                        <span>에잇</span>
+                    </div>
+                    <div class="artist__song__info__etc">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+            </li>
+            <li class="artist__song">
+                <div class="artist__song__cover">
+                    <img src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/297/613/81297613_1574066356132_1_600x600.JPG/dims/resize/Q_80,0" alt="/">
+                </div>
+                <div class="artist__song_info">
+                    <div class="artist__song__info__main">
+                        <span>IU</span>
+                        <span>Love poem</span>
+                    </div>
+                    <div class="artist__song__info__etc">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+            </li>
+            <li class="artist__song">
+                <div class="artist__song__cover">
+                    <img src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/111/535/81111535_1539157728291_1_600x600.JPG/dims/resize/Q_80,0" alt="/">
+                </div>
+                <div class="artist__song_info">
+                    <div class="artist__song__info__main">
+                        <span>IU</span>
+                        <span>삐삐</span>
                     </div>
                     <div class="artist__song__info__etc">
                         <i class="fas fa-ellipsis-v"></i>
@@ -59,24 +101,30 @@
         </div>
     </section>
     <section class="music">
-        <div class="music__button">
+        <div class="music__button nav-btn">
             <i class="fas fa-search"></i>
+            <i class="fas fa-ellipsis-v"></i>
         </div>
         <div class="music__albumCover">
-            <img src="" alt="/">
+            <img src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/867/444/81867444_1611726218872_1_600x600.JPG/dims/resize/Q_80,0" alt="/">
         </div>
         <div class="music__title">
             Celebrity
         </div>
+        <div class="music__artist">
+            아이유 (IU)
+        </div>
         <div class="music__info">
-            <span>00:00</span>
-            <span>03:34</span>
-            <input type="range">
+            <div class="music__info-time">
+                <span>00:00</span>
+                <span>03:34</span>
+            </div>
+            <input class="music__info-range" type="range">
         </div>
         <div class="music__plater__buttons">
             <i class="fas fa-redo-alt artist__song-redo"></i>
             <i class="fas fa-step-backward"></i>
-            <i class="fas fa-play artist__song-play"></i>
+            <div><i class="fas fa-play artist__song-play"></i></div>
             <i class="fas fa-step-forward"></i>
             <i class="fas fa-random artist__song-random"></i>
         </div>

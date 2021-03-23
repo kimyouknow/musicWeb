@@ -1,0 +1,9 @@
+.nav-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.music__button {
+  margin-bottom: 48px;
+}

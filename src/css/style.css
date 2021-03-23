@@ -1,0 +1,12 @@
+/* https://bongkey.github.io/music_web/ */
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+
+@import "reset.css";
+@import "main.css";
+@import "artist.css";
+@import "music.css";
+@import "nav.css";
+
+@import "./reponsive/min.css";
+@import "./reponsive/mediun.css";
+@import "./reponsive/large.css";

@@ -1,0 +1,25 @@
+* {
+}
+body {
+  font-family: "Jua", sans-serif;
+  background-color: #f7f7f7;
+  display: flex;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+section {
+  width: 240px;
+  height: 540px;
+  border-radius: 20px;
+  padding: 24px;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    0px 14px 44px 9px rgba(183, 130, 186, 0.18);
+  box-shadow: 0px 10px 13px -7px #000000,
+    0px 14px 44px 9px rgba(183, 130, 186, 0.18);
+}
+
+.music,
+.artist {
+  background-color: white;
+}
