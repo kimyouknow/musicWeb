@@ -17,7 +17,7 @@
             <i class="fas fa-search"></i>
         </div>
         <div class="artist__thubnail">
-            <img src="https://image.genie.co.kr/Y/IMAGE/IMG_ARTIST/067/872/918/67872918_1588900211036_19_600x600.JPG/dims/resize/Q_80,0" alt="/">
+            <img id="js-artist__thubnail" src="/src/image/2.jpg" alt="/">
         </div>
         <div class="artist__info">
             <span class="artist__info__name">아이유 (IU) </span>
@@ -33,58 +33,82 @@
                 <span>43.5M</span>
             </div>
         </div>
-        <ul>
+        <ul class="artist__list__song">
             <li class="artist__song">
-                <div class="artist__song__cover">
-                    <img src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/867/444/81867444_1611726218872_1_600x600.JPG/dims/resize/Q_80,0" alt="/">
-                </div>
-                <div class="artist__song_info">
+                <div class="artist__song_info js-artist__song">
+                    <div class="artist__song__cover ">
+                        <img src="/src/image/lilac.jpg" alt="/">
+                    </div>
                     <div class="artist__song__info__main">
                         <span>IU</span>
-                        <span>Celebrity</span>
+                        <span id="lilac">Lilac</span>
                     </div>
+                </div>
+                <div class="artist__song_etc"
                     <div class="artist__song__info__etc">
                         <i class="fas fa-ellipsis-v"></i>
                     </div>
                 </div>
             </li>
             <li class="artist__song">
-                <div class="artist__song__cover">
-                    <img src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/434/107/81434107_1588747979387_1_600x600.JPG/dims/resize/Q_80,0" alt="/">
-                </div>
-                <div class="artist__song_info">
+                <div class="artist__song_info js-artist__song">
+                    <div class="artist__song__cover ">
+                        <img src="/src/image/celebrity.jpg" alt="/">
+                    </div>
                     <div class="artist__song__info__main">
                         <span>IU</span>
-                        <span>에잇</span>
+                        <span id="celebrity">Celebrity</span>
                     </div>
+                </div>
+                <div class="artist__song_etc"
                     <div class="artist__song__info__etc">
                         <i class="fas fa-ellipsis-v"></i>
                     </div>
                 </div>
             </li>
             <li class="artist__song">
-                <div class="artist__song__cover">
-                    <img src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/297/613/81297613_1574066356132_1_600x600.JPG/dims/resize/Q_80,0" alt="/">
-                </div>
-                <div class="artist__song_info">
+                <div class="artist__song_info js-artist__song">
+                    <div class="artist__song__cover ">
+                        <img src="/src/image/eight.jpg" alt="/">
+                    </div>
                     <div class="artist__song__info__main">
                         <span>IU</span>
-                        <span>Love poem</span>
+                        <span id="eight">에잇</span>
                     </div>
+                </div>
+                <div class="artist__song_etc"
                     <div class="artist__song__info__etc">
                         <i class="fas fa-ellipsis-v"></i>
                     </div>
                 </div>
             </li>
             <li class="artist__song">
-                <div class="artist__song__cover">
-                    <img src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/111/535/81111535_1539157728291_1_600x600.JPG/dims/resize/Q_80,0" alt="/">
-                </div>
-                <div class="artist__song_info">
+                <div class="artist__song_info js-artist__song">
+                    <div class="artist__song__cover ">
+                        <img src="/src/image/blueming.jpg" alt="/">
+                    </div>
                     <div class="artist__song__info__main">
                         <span>IU</span>
-                        <span>삐삐</span>
+                        <span id="blueming">Blueming</span>
                     </div>
+                </div>
+                <div class="artist__song_etc"
+                    <div class="artist__song__info__etc">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+            </li>
+            <li class="artist__song">
+                <div class="artist__song_info js-artist__song">
+                    <div class="artist__song__cover ">
+                        <img src="/src/image/bbibbi.jpg" alt="/">
+                    </div>
+                    <div class="artist__song__info__main">
+                        <span>IU</span>
+                        <span id="bbibbi">삐삐</span>
+                    </div>
+                </div>
+                <div class="artist__song_etc"
                     <div class="artist__song__info__etc">
                         <i class="fas fa-ellipsis-v"></i>
                     </div>
@@ -92,11 +116,11 @@
             </li>
         </ul>
         <div class="artist__player">
-            <span>Celebrity</span>
+            <span id="js-music__title">Click Music!!!</span>
             <div class="artist__player__buttons">
-                <i class="fas fa-step-backward"></i>
-                <i class="fas fa-pause"></i>
-                <i class="fas fa-step-forward"></i>
+                <div id="jsBackBtn"><i class="fas fa-step-backward"></i></div>
+                <div id="jsPlayBtn"><i class="fas fa-play"></i></div>
+                <div id="jsNextBtn"><i class="fas fa-step-forward"></i></div>
             </div>
         </div>
     </section>
@@ -105,34 +129,38 @@
             <i class="fas fa-search"></i>
             <i class="fas fa-ellipsis-v"></i>
         </div>
-        <div class="music__albumCover">
-            <img src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/867/444/81867444_1611726218872_1_600x600.JPG/dims/resize/Q_80,0" alt="/">
+        <div class="music__albumCover" id="js-music__albumCover" >
+            <img src="/src/image/2.jpg" alt="/">
         </div>
-        <div class="music__title">
-            Celebrity
+        <div class="music__title" id="js-music__title">
+            <span id="lilac">Click Music!!!</span>
         </div>
         <div class="music__artist">
             아이유 (IU)
         </div>
         <div class="music__info">
             <div class="music__info-time">
-                <span>00:00</span>
-                <span>03:34</span>
+                <span id="jsCurremtime">00:00:00</span>
+                <span id="jsTotalTime">00:00:00</span>
             </div>
-            <input class="music__info-range" type="range">
+            <input id="jsMusicBar" class="music__info-range" type="range" min="0" max="100" value="0">
+            <div id="jsProgress"></div>
         </div>
-        <div class="music__plater__buttons">
+        <div class="music__player__buttons">
             <i class="fas fa-redo-alt artist__song-redo"></i>
-            <i class="fas fa-step-backward"></i>
-            <div><i class="fas fa-play artist__song-play"></i></div>
-            <i class="fas fa-step-forward"></i>
-            <i class="fas fa-random artist__song-random"></i>
+            <i id="jsBackBtn" class="fas fa-step-backward"></i>
+            <div id="jsPlayBtn"><i class="fas fa-play artist__song-play"></i></div>
+            <i id="jsNextBtn" class="fas fa-step-forward"></i>
+            <i class="fas fa-volume-up artist__song-volume" id="jsVolumeBtn"></i>
+            <input id="jsVolumeController" class="music__info-volume" type="range" min="0", max="1", step="0.1">
         </div>
     </section>
+    <audio controls class="audio" preload="metadata" id="jsAudio" >
+        <source src="">
+    </audio>
 
 
-
-    <script src="src/js/main.js"></script>
+    <script type="module" src="src/js/main.js"></script>
 </body>
 
 </html>

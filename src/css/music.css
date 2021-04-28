@@ -28,6 +28,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 48px;
+  position: relative;
 }
 .music__info-time {
   display: flex;
@@ -36,34 +37,57 @@
   color: rgba(0, 0, 0, 0.6);
   margin-bottom: 8px;
 }
-.music__info-range {
+.music__info-range,
+.music__info-volume {
   -webkit-appearance: none;
   width: 100%;
   height: 8px;
   background: rgba(0, 0, 0, 0.1);
   margin: 0;
+  z-index: 1;
 }
-.music__info-range::-webkit-slider-thumb {
+
+.music__info-range::-webkit-slider-thumb,
+.music__info-volume::-webkit-slider-thumb {
   -webkit-appearance: none;
   border: 1px solid var(--orange-color);
   height: 8px;
   width: 10px;
   background: #000;
 }
-.music__info-range:focus {
+.music__info-range::-webkit-slider-thumb {
+  cursor: pointer;
+}
+#jsProgress {
+  width: 0;
+  height: 8px;
+  background-color: rgba(210, 170, 212, 0.64);
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+.music__info-range:focus,
+.music__info-volume:focus {
   outline: none;
 }
-
-.music__plater__buttons {
+.music__info-volume {
+  width: 50%;
+  margin-top: 12px;
+}
+.music__player__buttons {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
   font-size: 24px;
 }
-.music__plater__buttons:not(:nth-child(3)) {
+.music__player__buttons i {
+  cursor: pointer;
+}
+.music__player__buttons:not(:nth-child(3)) {
   font-size: 18px;
 }
-.music__plater__buttons div {
+.music__player__buttons div {
   width: 60px;
   height: 60px;
   font-size: 24px;
@@ -73,4 +97,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.music__player__buttons div:active,
+.music__player__buttons i:active {
+  transform: scale(1.1);
+}
+.music__info-volume {
+  position: absolute;
+  transform: rotate(-90deg);
+  width: 80px;
+  right: -30px;
+  bottom: 24px;
+  display: none;
+}
+.music__info-volume:focus {
+  transition: transform 1s linear;
 }
