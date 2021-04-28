@@ -113,6 +113,7 @@ const handleVolumeControl = (e) => {
 const handleMain = (e) => {
     albumCover.querySelector("img").src = e.target.src;
     jsAudio.src =  '';
+    jsTotalTime = '00:00:00';
     changeToPlayBtn();
     songName.forEach((name) => {
         name.innerText = 'Click Music!!!';
