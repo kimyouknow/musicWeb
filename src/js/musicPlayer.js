@@ -67,7 +67,7 @@ const setTotalTime = (jsAudio) => {
 }
 
 const musicPlayList = (clickedMusic) => {
-    jsAudio.src = `/src/music/${clickedMusic}.mp3`
+    jsAudio.src = `src/music/${clickedMusic}.mp3`
     MusicParam.id = clickedMusic
     jsAudio.onloadedmetadata = function() {
         jsAudio.play();
@@ -126,7 +126,7 @@ const findName = (song) => {
 }
 
 const nextImage = (song) => {
-    albumCover.querySelector("img").src = `/src/image/${song}.jpg`
+    albumCover.querySelector("img").src = `src/image/${song}.jpg`
 }
 
 const changeTitle = (song) => {
